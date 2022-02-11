@@ -6,7 +6,7 @@ class Xtb < Formula
   license "LGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/awvwgk/homebrew-qc/releases/download/xtb-6.4.1"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/xtb-6.4.1"
     sha256 cellar: :any, big_sur:      "e1112bc71e3ecc47d99930cdadc6871ae79cf7f34855aa5bc1ffd873202a5895"
     sha256 cellar: :any, catalina:     "52e6892a0b08070fed1be89dfd8ac1f7d2a88986da57b6e2c6af6af3b1a99023"
     sha256               x86_64_linux: "53f29386748285027708a5ec2488668b55ccd010125b84f8849b08e147fe7c2f"

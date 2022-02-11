@@ -5,7 +5,7 @@ This repository provides package build instructions for [xtb](https://github.com
 You can install *xtb* by tapping this repository
 
 ```
-brew tap awvwgk/qc
+brew tap grimme-lab/qc
 brew install xtb
 ```
 

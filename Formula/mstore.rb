@@ -6,7 +6,7 @@ class Mstore < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/awvwgk/homebrew-qc/releases/download/mstore-0.2.0"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/mstore-0.2.0"
     sha256 cellar: :any,                 big_sur:      "9430b1ac9824d9dff5a281b7b943c74a22a5e68986fed75a86328aea16255dd6"
     sha256 cellar: :any,                 catalina:     "e88a5b37430fabb8544b255d4919d17466dfdd979b46a13b5246644b23f82bd7"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "63f3232343889c646c541864d4f817a63639907cba170cd319f39e7d7333175f"

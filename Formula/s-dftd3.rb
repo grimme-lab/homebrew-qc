@@ -6,7 +6,7 @@ class SDftd3 < Formula
   license "LGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/awvwgk/homebrew-qc/releases/download/s-dftd3-0.5.1"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/s-dftd3-0.5.1"
     sha256 cellar: :any,                 big_sur:      "7fdc38fe58af3269dfbd0add9759e2755281be0c6e18cba71cc26bf795810b66"
     sha256 cellar: :any,                 catalina:     "b44fb64695d91f10f256172fab6ca8accc4684f91b5fbddc3e0254df791e4973"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "2a6eb6f8d67150dd5035255d838a6e7d8b8fc2b5c5838930b62f9552250e079c"

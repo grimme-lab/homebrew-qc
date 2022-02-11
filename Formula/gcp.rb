@@ -6,7 +6,7 @@ class Gcp < Formula
   license "LGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/awvwgk/homebrew-qc/releases/download/gcp-2.3.1"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/gcp-2.3.1"
     sha256 cellar: :any,                 big_sur:      "a210873f06bbb1a9a701e16b214993fdcc41fc9cc4c0931b85d33ae512bb72ac"
     sha256 cellar: :any,                 catalina:     "915e2cf9bbc5750dcf9d8739367871679d269323a1b5d45e88791209892f01dc"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "b73ce843f26627d051745f62f95da6b521b580f4ec1ec68c5581814629795656"
