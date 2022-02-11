@@ -5,6 +5,13 @@ class Crest < Formula
   sha256 "f17da872064eb64502ac24c19e431467940d98dcb1bd391f7267f412a0a79dab"
   license "LGPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/awvwgk/homebrew-qc/releases/download/crest-2.11.2"
+    sha256 cellar: :any, big_sur:      "6cf5f1c8c4e0cbef60d39d80782ba68fa52d7e0ef7028c1016660df3c2c6d562"
+    sha256 cellar: :any, catalina:     "e4bd7e7883969b275ebc034738e979f58f817a538e07b0db2a206fae9511815e"
+    sha256               x86_64_linux: "ad443630938783c90a35b02e4cb1550e2e00c2529804ee5d7bacc8a26d96710e"
+  end
+
   depends_on "asciidoctor" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
