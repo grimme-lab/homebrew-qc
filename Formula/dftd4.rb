@@ -5,6 +5,13 @@ class Dftd4 < Formula
   sha256 "60d4f30d97cae95a7b48a99e10848ef600b605f9da98c4893a6034bded1a7f24"
   license "LGPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/awvwgk/homebrew-qc/releases/download/dftd4-3.3.0"
+    sha256 cellar: :any, big_sur:      "e3c1df2da7db92ede15bfd0fa5e60269f400af313bc67d03c729fed7d8b240b0"
+    sha256 cellar: :any, catalina:     "55567df5c17ed6b289d91fd1027bd3dbc11a3e5d77a385dec0541c7d8b252d38"
+    sha256               x86_64_linux: "bfee04ba34bb9cfecb54919c3db76d2a0d8e09fb8dc79ff42eed31cd27123f08"
+  end
+
   depends_on "asciidoctor" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
