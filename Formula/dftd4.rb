@@ -1,8 +1,8 @@
 class Dftd4 < Formula
   desc "Generally applicable, charge dependent London-dispersion correction"
   homepage "https://github.com/dftd4/dftd4"
-  url "https://github.com/dftd4/dftd4/archive/v3.3.0.tar.gz"
-  sha256 "60d4f30d97cae95a7b48a99e10848ef600b605f9da98c4893a6034bded1a7f24"
+  url "https://github.com/dftd4/dftd4/archive/v3.4.0.tar.gz"
+  sha256 "f3b0a16a952817ae48e819626e13676fba3b61c8beea47b0f8ada2fbb679fb7b"
   license "LGPL-3.0-or-later"
 
   bottle do
@@ -14,10 +14,12 @@ class Dftd4 < Formula
 
   depends_on "asciidoctor" => :build
   depends_on "meson" => :build
+  depends_on "mstore" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
   depends_on "gcc"
   depends_on "mctc-lib"
+  depends_on "multicharge"
   depends_on "openblas"
   fails_with gcc: "4"
   fails_with gcc: "5"
