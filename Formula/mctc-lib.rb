@@ -1,8 +1,8 @@
 class MctcLib < Formula
   desc "Modular computation tool chain library"
   homepage "https://grimme-lab.github.io/mctc-lib"
-  url "https://github.com/grimme-lab/mctc-lib/archive/v0.2.4.tar.gz"
-  sha256 "ca728d129c4bb0a06ed37183e3a8e2659d5fbbec2278c3f6569fb638314129d1"
+  url "https://github.com/grimme-lab/mctc-lib/archive/v0.3.0.tar.gz"
+  sha256 "a697516bae03573e9ee43b8b72160584b35cc902e8f35c6024260241b154ec47"
   license "Apache-2.0"
 
   bottle do
