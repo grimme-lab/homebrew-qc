@@ -5,6 +5,13 @@ class Multicharge < Formula
   sha256 "953e2ace2f4035b1fa8ecf680f90b5ce6ad5caae17c8d8ccbc2578b92b69d3e7"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/multicharge-0.2.0"
+    sha256 cellar: :any, big_sur:      "41be571fa9599fd8382fd5567f4c62a14d5fd66ab8ca8887f3a51e839ae85927"
+    sha256 cellar: :any, catalina:     "e32625eaa6f25fb6603c6ce8fb66ad9004f3d671dcfb0604e3fd45d65e96a2b7"
+    sha256               x86_64_linux: "48ade77485291ae8fabb29f53f65b3776e1c61582398604e17952d5dd1b09778"
+  end
+
   depends_on "asciidoctor" => :build
   depends_on "meson" => :build
   depends_on "mstore" => :build
