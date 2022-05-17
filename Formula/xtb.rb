@@ -6,10 +6,10 @@ class Xtb < Formula
   license "LGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/xtb-6.4.1"
-    sha256 cellar: :any, big_sur:      "e1112bc71e3ecc47d99930cdadc6871ae79cf7f34855aa5bc1ffd873202a5895"
-    sha256 cellar: :any, catalina:     "52e6892a0b08070fed1be89dfd8ac1f7d2a88986da57b6e2c6af6af3b1a99023"
-    sha256               x86_64_linux: "53f29386748285027708a5ec2488668b55ccd010125b84f8849b08e147fe7c2f"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/xtb-6.5.0"
+    sha256 cellar: :any, big_sur:      "c6b252f983bfce641a7b7877c2203a6d124c493ed81bdca5ab73b4639cb15592"
+    sha256 cellar: :any, catalina:     "c0d1ca90fc56e8b484a49f3bc59f481201b730ac3c37e4625037a6c212db91d9"
+    sha256               x86_64_linux: "9fda3250e10de6bf13b39e04b7a066b9d7838e0b596ab3d93c8dc9a7035664da"
   end
 
   depends_on "asciidoctor" => :build
