@@ -1,8 +1,8 @@
 class Xtb < Formula
   desc "Semiemprical extended tight-binding program package"
   homepage "https://xtb-docs.readthedocs.io"
-  url "https://github.com/grimme-lab/xtb/archive/v6.4.1.tar.gz"
-  sha256 "cd7b6ec9b7963012ce71220a70773641f0d9e06e0691750a25b83e823510d1d7"
+  url "https://github.com/grimme-lab/xtb/releases/download/v6.5.0/xtb-6.5.0-source.tar.xz"
+  sha256 "5f780656bf7b440a8e1f753a9a877401a7d497fb3160762f48bdefc8a9914976"
   license "LGPL-3.0-or-later"
 
   bottle do
@@ -16,7 +16,9 @@ class Xtb < Formula
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
+  depends_on "test-drive" => :build
   depends_on "gcc"
+  depends_on "mctc-lib"
   depends_on "openblas"
   fails_with gcc: "4"
   fails_with gcc: "5"
