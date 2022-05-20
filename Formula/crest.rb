@@ -6,10 +6,10 @@ class Crest < Formula
   license "LGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/crest-2.11.2"
-    sha256 cellar: :any, big_sur:      "6cf5f1c8c4e0cbef60d39d80782ba68fa52d7e0ef7028c1016660df3c2c6d562"
-    sha256 cellar: :any, catalina:     "e4bd7e7883969b275ebc034738e979f58f817a538e07b0db2a206fae9511815e"
-    sha256               x86_64_linux: "ad443630938783c90a35b02e4cb1550e2e00c2529804ee5d7bacc8a26d96710e"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/crest-2.12"
+    sha256 cellar: :any, big_sur:      "ce91a18333211489c2747921542760520eb2a9e3d47fbd2c1533d38271f3a1c9"
+    sha256 cellar: :any, catalina:     "f1734306faed4757c437fbc2dec363f7842cfd76031c1d32b7609f3327a01f4e"
+    sha256               x86_64_linux: "14981799b9da38bd1332e68ba4dd891c5e492d14f5d4465e7e1936928d185746"
   end
 
   depends_on "asciidoctor" => :build
