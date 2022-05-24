@@ -29,6 +29,7 @@ class SDftd3 < Formula
 
   def install
     ENV.fortran
+    inreplace "config/install-mod.py", /python$/, "python3"
     meson_args = std_meson_args
     meson_args << "-Dblas=custom"
     meson_args << "-Dblas_libs=openblas"
