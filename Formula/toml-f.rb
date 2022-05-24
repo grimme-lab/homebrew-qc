@@ -24,10 +24,12 @@ class TomlF < Formula
 
   def install
     ENV.fortran
+    inreplace "config/install-mod.py", /python$/, "python3"
     meson_args = std_meson_args
     system "meson", "setup", "_build", *meson_args
     system "meson", "compile", "-C", "_build"
-    system "meson", "test", "-C", "_build", "--no-rebuild", "--num-processes", "1"
+    selected_tests = ["version", "fpm", "tftest", "example-1.1", "example-2.2", "decoder"]
+    system "meson", "test", "-C", "_build", "--no-rebuild", "--num-processes", "1", *selected_tests
     system "meson", "install", "-C", "_build", "--no-rebuild"
   end
 

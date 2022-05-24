@@ -28,6 +28,7 @@ class Multicharge < Formula
 
   def install
     ENV.fortran
+    inreplace "config/install-mod.py", /python$/, "python3"
     meson_args = std_meson_args
     meson_args << "-Dlapack=openblas"
     system "meson", "setup", "_build", *meson_args
