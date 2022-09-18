@@ -4,6 +4,7 @@ class SDftd3 < Formula
   url "https://github.com/awvwgk/simple-dftd3/archive/v0.6.0.tar.gz"
   sha256 "4bef311f8e5a2c32141eddeea65615c3c8480f917cd884488ede059fb0962a50"
   license "LGPL-3.0-or-later"
+  revision 1
 
   bottle do
     root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/s-dftd3-0.6.0"
