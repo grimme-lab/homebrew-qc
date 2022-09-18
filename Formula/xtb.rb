@@ -4,6 +4,7 @@ class Xtb < Formula
   url "https://github.com/grimme-lab/xtb/releases/download/v6.5.1/xtb-6.5.1-source.tar.xz"
   sha256 "0922205cc224fe79e28f3d75be4e10c03efa8f3f666aedec8346fed82b272cad"
   license "LGPL-3.0-or-later"
+  revision 1
 
   bottle do
     root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/xtb-6.5.1"
