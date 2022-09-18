@@ -4,6 +4,7 @@ class Dftd4 < Formula
   url "https://github.com/dftd4/dftd4/archive/v3.4.0.tar.gz"
   sha256 "f3b0a16a952817ae48e819626e13676fba3b61c8beea47b0f8ada2fbb679fb7b"
   license "LGPL-3.0-or-later"
+  revision 1
 
   bottle do
     root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/dftd4-3.4.0"
