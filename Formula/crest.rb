@@ -4,6 +4,7 @@ class Crest < Formula
   url "https://github.com/grimme-lab/crest/archive/refs/tags/v2.12.tar.gz"
   sha256 "390f0ac0aedafbd6bb75974fcffefe7e0232ad6c4ea0ab4f1a77e656a3ce263d"
   license "LGPL-3.0-or-later"
+  revision 1
 
   bottle do
     root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/crest-2.12"
