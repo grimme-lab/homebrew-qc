@@ -4,6 +4,7 @@ class TestDrive < Formula
   url "https://github.com/fortran-lang/test-drive/archive/refs/tags/v0.4.0.tar.gz"
   sha256 "f9c037a3c1727e98801c2375e6f2efde9881ac1f54b04be3bc928e094f5787a5"
   license any_of: ["Apache-2.0", "MIT"]
+  revision 1
 
   bottle do
     root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/test-drive-0.4.0"
