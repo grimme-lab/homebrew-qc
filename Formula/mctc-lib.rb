@@ -4,6 +4,7 @@ class MctcLib < Formula
   url "https://github.com/grimme-lab/mctc-lib/archive/v0.3.0.tar.gz"
   sha256 "a697516bae03573e9ee43b8b72160584b35cc902e8f35c6024260241b154ec47"
   license "Apache-2.0"
+  revision 1
 
   bottle do
     root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/mctc-lib-0.3.0"
