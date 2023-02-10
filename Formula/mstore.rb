@@ -4,7 +4,7 @@ class Mstore < Formula
   url "https://github.com/grimme-lab/mstore/archive/v0.2.0.tar.gz"
   sha256 "95edba88afbc8013f57f4c818a97c0500cc40b158bed11234c061b2b6d7e480d"
   license "Apache-2.0"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/mstore-0.2.0_1"
