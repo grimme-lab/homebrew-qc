@@ -1,8 +1,8 @@
 class Xtb < Formula
   desc "Semiemprical extended tight-binding program package"
   homepage "https://xtb-docs.readthedocs.io"
-  url "https://github.com/grimme-lab/xtb/releases/download/v6.5.1/xtb-6.5.1-source.tar.xz"
-  sha256 "0922205cc224fe79e28f3d75be4e10c03efa8f3f666aedec8346fed82b272cad"
+  url "https://github.com/grimme-lab/xtb/releases/download/v6.6.0/xtb-6.6.0-source.tar.xz"
+  sha256 "8460113f2678dcb23220af17b734f1221af302f42126bb54e3ae356530933b85"
   license "LGPL-3.0-or-later"
 
   bottle do
@@ -29,7 +29,8 @@ class Xtb < Formula
   def install
     ENV.fortran
     meson_args = std_meson_args
-    meson_args << "-Dla_backend=openblas"
+    meson_args << "-Dlapack=openblas"
+    meson_args << "-Dtblite=disabled"
     meson_args << "-Dbuild_name=homebrew"
     meson_args << "-Dfortran_link_args=-Wl,-stack_size,0x1000000" if OS.mac?
     system "meson", "setup", "_build", *meson_args
