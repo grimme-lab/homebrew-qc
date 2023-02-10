@@ -1,8 +1,8 @@
 class MctcLib < Formula
   desc "Modular computation tool chain library"
   homepage "https://grimme-lab.github.io/mctc-lib"
-  url "https://github.com/grimme-lab/mctc-lib/archive/v0.3.0.tar.gz"
-  sha256 "a697516bae03573e9ee43b8b72160584b35cc902e8f35c6024260241b154ec47"
+  url "https://github.com/grimme-lab/mctc-lib/archive/v0.3.1.tar.gz"
+  sha256 "03dc8ccba37413da70e55a07cef8e8de53bce33f5bb52c1f8db5fec326abe083"
   license "Apache-2.0"
 
   bottle do
@@ -24,7 +24,6 @@ class MctcLib < Formula
 
   def install
     ENV.fortran
-    inreplace "config/install-mod.py", /python$/, "python3"
     meson_args = std_meson_args
     system "meson", "setup", "_build", *meson_args
     system "meson", "compile", "-C", "_build"
