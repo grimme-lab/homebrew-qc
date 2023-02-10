@@ -1,8 +1,8 @@
 class SDftd3 < Formula
   desc "Simple reimplementation of DFT-D3"
   homepage "https://dftd3.readthedocs.io"
-  url "https://github.com/awvwgk/simple-dftd3/archive/v0.6.0.tar.gz"
-  sha256 "4bef311f8e5a2c32141eddeea65615c3c8480f917cd884488ede059fb0962a50"
+  url "https://github.com/dftd3/simple-dftd3/archive/v0.7.0.tar.gz"
+  sha256 "19400a176eb4dcee7b89181a5a5f0033fe6b05c52821e54896a98448761d003a"
   license "LGPL-3.0-or-later"
 
   bottle do
@@ -29,7 +29,6 @@ class SDftd3 < Formula
 
   def install
     ENV.fortran
-    inreplace "config/install-mod.py", /python$/, "python3"
     meson_args = std_meson_args
     meson_args << "-Dblas=custom"
     meson_args << "-Dblas_libs=openblas"
