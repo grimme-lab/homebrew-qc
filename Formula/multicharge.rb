@@ -4,6 +4,7 @@ class Multicharge < Formula
   url "https://github.com/grimme-lab/multicharge/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "953e2ace2f4035b1fa8ecf680f90b5ce6ad5caae17c8d8ccbc2578b92b69d3e7"
   license "Apache-2.0"
+  revision 1
 
   bottle do
     root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/multicharge-0.2.0"
