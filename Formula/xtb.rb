@@ -32,7 +32,7 @@ class Xtb < Formula
     meson_args << "-Dlapack=openblas"
     meson_args << "-Dtblite=disabled"
     meson_args << "-Dbuild_name=homebrew"
-    meson_args << "-Dfortran_link_args=-Wl,-stack_size,0x1000000" if OS.mac?
+    meson_args << "-Dxtb:fortran_link_args=-Wl,-stack_size,0x1000000" if OS.mac?
     system "meson", "setup", "_build", *meson_args
     system "meson", "compile", "-C", "_build"
     system "meson", "test", "-C", "_build", "--no-rebuild", "--num-processes", "1"
