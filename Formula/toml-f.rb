@@ -6,10 +6,10 @@ class TomlF < Formula
   license any_of: ["Apache-2.0", "MIT"]
 
   bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/toml-f-0.2.2"
-    sha256 cellar: :any,                 big_sur:      "b8a0e56bcc31d153880d1c16732f9a670d27abd2e976086f0ffb39f941ff4341"
-    sha256 cellar: :any,                 catalina:     "81b128c1b3d81af0a9568ab40b4f352f379ae04df02597fa1e9851a93e2e666d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a801393ee4a9e6f45bf80f93dab497527114c88e89d3943183b29cee35955df3"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/toml-f-0.3.1"
+    sha256 cellar: :any,                 monterey:     "b08b1e9cae3a7dce27ebedcc343b9c60ff03cd49bfca2ca419670d8cb98980d2"
+    sha256 cellar: :any,                 big_sur:      "50385634653e12d9d36a7943ecdbe2465258710b37aa97bb2375610e92c9bf1b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "53c47daed9db4abe0da84c2d86550b0f8b2a674c9d8519b30e3068de82c723c7"
   end
 
   depends_on "meson" => :build
