@@ -6,10 +6,10 @@ class MctcLib < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/mctc-lib-0.3.0"
-    sha256 cellar: :any,                 big_sur:      "d80cbf1cfbc150af5c0daa07b15537cc7b24e9037c501dcd345b1c548ef3ea36"
-    sha256 cellar: :any,                 catalina:     "3d95cdc6a8932a9881ed20d5ced234c824cee07a38edf9e2b344fe1ee80a0d20"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e29656c0b79f0f612ec7464572747da444a8d5ca968d9cbf19e1be5909ae2e50"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/mctc-lib-0.3.1"
+    sha256 cellar: :any,                 monterey:     "2c30f90752bdcf9a5d9e9587b1c1cf07a9fb7aea6241135f99eacae51219d7e9"
+    sha256 cellar: :any,                 big_sur:      "d7ae794a17647e2204473fffcb532a5f237e482f65b5d2a9b3ef84a605f9bd56"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1398ba8c6f7a61f0b59515e20a4cd89221ec9ab4b97c65682cbe6cd84bb98b14"
   end
 
   depends_on "asciidoctor" => :build
