@@ -7,10 +7,10 @@ class Mstore < Formula
   revision 2
 
   bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/mstore-0.2.0_1"
-    sha256 cellar: :any,                 big_sur:      "c931df766ef4249b63022b5891c02a47be5d7a03c1f714662866cf7cc57188ae"
-    sha256 cellar: :any,                 catalina:     "df7c7e3d791c9ddbd4ac54af1409f9010b2569341f010c299919c677e922abe9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f3775e3c41670cfd90b4ecf659b9cfc08dd6024b3810b61ef57972d888ccb6da"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/mstore-0.2.0_2"
+    sha256 cellar: :any,                 monterey:     "725732a3d64f3a9a2befa971d337878d2157bb5790f609ac2f7e72a908798873"
+    sha256 cellar: :any,                 big_sur:      "84c05cfec49454e4621f1bc169c12e40a391fc005d653ca2d334517bcf6d8216"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4da57ed6d710233a9331a74edc95dcefa52c153d2f8c458797414b44db11e832"
   end
 
   depends_on "meson" => :build
