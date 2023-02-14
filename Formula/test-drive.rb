@@ -7,10 +7,10 @@ class TestDrive < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/test-drive-0.4.0"
-    sha256 cellar: :any,                 big_sur:      "4a3bc8175b1107fdfd8b6e77effb413333e853e69d5d1f98e258b69aa9d73773"
-    sha256 cellar: :any,                 catalina:     "cbc920050e2a7f7acc2f8532349b31d1d9f76a58bad5fe5476f4ae679146ba4f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "95ce8120d56b56ebb386207883fbb59f717d212c19fd4770a88e2650cb808e46"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/test-drive-0.4.0_1"
+    sha256 cellar: :any,                 monterey:     "8e9c3b25991d02cd3bdd606024ea626cabee5de772f0bf2e4868923e060b2582"
+    sha256 cellar: :any,                 big_sur:      "778fa8981f6b940a935586fcff4c8d29c0e9e1a2050de1f2fecfc42cbfcf9950"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "6d68a7a6bad4992074c6779e54e918fc72971185b825e3ffb8d08fccc53d7a4d"
   end
 
   depends_on "meson" => :build
