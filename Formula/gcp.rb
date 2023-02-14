@@ -4,6 +4,7 @@ class Gcp < Formula
   url "https://github.com/grimme-lab/gcp/archive/v2.3.1.tar.gz"
   sha256 "26c4d889062412c377459a4a939cbe12527dcdc5d89c99cf607f589ec86c5fe4"
   license "LGPL-3.0-or-later"
+  revision 1
 
   bottle do
     root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/gcp-2.3.1"
