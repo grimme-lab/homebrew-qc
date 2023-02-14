@@ -7,10 +7,10 @@ class Crest < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/crest-2.12"
-    sha256 cellar: :any, big_sur:      "ce91a18333211489c2747921542760520eb2a9e3d47fbd2c1533d38271f3a1c9"
-    sha256 cellar: :any, catalina:     "f1734306faed4757c437fbc2dec363f7842cfd76031c1d32b7609f3327a01f4e"
-    sha256               x86_64_linux: "14981799b9da38bd1332e68ba4dd891c5e492d14f5d4465e7e1936928d185746"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/crest-2.12_1"
+    sha256 cellar: :any, monterey:     "120d2eb2f22e0e231132501ad1080540ea1283ace3509595ed4cae6f33087a8b"
+    sha256 cellar: :any, big_sur:      "482bbce8acb7881987332d84443c47d300c633157ed6d0b1586d9b02661cf6c4"
+    sha256               x86_64_linux: "d53845fc5bd3a67c07a0afd881f55f02bc4acfef36e1d65bdd618147ec2078a0"
   end
 
   depends_on "asciidoctor" => :build
