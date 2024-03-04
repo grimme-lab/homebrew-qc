@@ -1,8 +1,8 @@
 class Xtb < Formula
   desc "Semiemprical extended tight-binding program package"
   homepage "https://xtb-docs.readthedocs.io"
-  url "https://github.com/grimme-lab/xtb/releases/download/v6.6.1/xtb-6.6.1-source.tar.xz"
-  sha256 "de0b8d4515f3c878456d9f0f83d4922a55f2b4cbb9c56fe68df559ecd284ff86"
+  url "https://github.com/grimme-lab/xtb/releases/download/v6.7.0/xtb-6.7.0-source.tar.xz"
+  sha256 "d2d4b8bf26a1896bceed7aa69f227583c2f7fb532c8cb12c4a661186c1bac995"
   license "LGPL-3.0-or-later"
 
   bottle do
