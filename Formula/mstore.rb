@@ -1,7 +1,7 @@
 class Mstore < Formula
   desc "Modular structure store for testing"
   homepage "https://github.com/grimme-lab/mstore"
-  url "https://github.com/grimme-lab/mstore/archive/v0.2.0.tar.gz"
+  url "https://github.com/grimme-lab/mstore/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "95edba88afbc8013f57f4c818a97c0500cc40b158bed11234c061b2b6d7e480d"
   license "Apache-2.0"
   revision 2
