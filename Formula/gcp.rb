@@ -1,7 +1,7 @@
 class Gcp < Formula
   desc "Geometrical Counter-Poise correction"
   homepage "https://github.com/grimme-lab/gcp"
-  url "https://github.com/grimme-lab/gcp/archive/v2.3.1.tar.gz"
+  url "https://github.com/grimme-lab/gcp/archive/refs/tags/v2.3.1.tar.gz"
   sha256 "26c4d889062412c377459a4a939cbe12527dcdc5d89c99cf607f589ec86c5fe4"
   license "LGPL-3.0-or-later"
   revision 1

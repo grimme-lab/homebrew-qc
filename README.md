@@ -4,10 +4,9 @@ This repository provides package build instructions for [xtb](https://github.com
 
 You can install *xtb* by tapping this repository
 
-```
-brew tap grimme-lab/qc
-brew install xtb
-```
+```brew tap grimme-lab/qc```
+
+```brew install xtb```
 
 Available programs are
 
