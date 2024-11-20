@@ -1,10 +1,9 @@
 class TestDrive < Formula
   desc "Simple testing framework"
   homepage "https://github.com/fortran-lang/test-drive"
-  url "https://github.com/fortran-lang/test-drive/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "f9c037a3c1727e98801c2375e6f2efde9881ac1f54b04be3bc928e094f5787a5"
+  url "https://github.com/fortran-lang/test-drive/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "e7d99209de0d1c4faebf3be64303a3adf2940c07cf86d47858c4032c5d38dfc2"
   license any_of: ["Apache-2.0", "MIT"]
-  revision 1
 
   bottle do
     root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/test-drive-0.4.0_1"
