@@ -25,7 +25,6 @@ class Mstore < Formula
 
   def install
     ENV.fortran
-    inreplace "config/install-mod.py", /python$/, "python3"
     meson_args = std_meson_args
     system "meson", "setup", "_build", *meson_args
     system "meson", "compile", "-C", "_build"
