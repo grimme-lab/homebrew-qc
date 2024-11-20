@@ -1,8 +1,8 @@
 class SDftd3 < Formula
   desc "Simple reimplementation of DFT-D3"
   homepage "https://dftd3.readthedocs.io"
-  url "https://github.com/dftd3/simple-dftd3/archive/refs/tags/v0.7.0.tar.gz"
-  sha256 "19400a176eb4dcee7b89181a5a5f0033fe6b05c52821e54896a98448761d003a"
+  url "https://github.com/dftd3/simple-dftd3/archive/refs/tags/v1.2.1.tar.gz"
+  sha256 "3a12c04c490badc63054aca18ea7670d416fcc2152cfe9b8af220da57c39f942"
   license "LGPL-3.0-or-later"
 
   bottle do
