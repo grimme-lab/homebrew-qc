@@ -37,28 +37,29 @@ Available programs are
 
 ### How to update the formulae
 
-1. Switch to new branch on your fork of the repository
+1. Switch to a new branch on your fork of the repository
 2. Update the formulae in the `Formula` directory (e.g., `mctc-lib.rb`), keeping the following style:
 
-    ```ruby
-    url "https://github.com/grimme-lab/mctc-lib/archive/refs/tags/v0.3.2.tar.gz"
-    sha256 "b18b06f80e6274b353dd091c12b3a83217033ce0bd80471b54cf486cc60c0251"
-    ```
-    The `sha256` hash can be obtained by running
-    ```sh
-    curl -sL "https://github.com/grimme-lab/mctc-lib/archive/refs/tags/v0.3.2.tar.gz" | shasum -a 256 | cut -d " " -f 1
-    ```
+```ruby
+url "https://github.com/grimme-lab/mctc-lib/archive/refs/tags/v0.3.2.tar.gz"
+sha256 "b18b06f80e6274b353dd091c12b3a83217033ce0bd80471b54cf486cc60c0251"
+```
+The `sha256` hash can be obtained by running
+```sh
+curl -sL "https://github.com/grimme-lab/mctc-lib/archive/refs/tags/v0.3.2.tar.gz" | shasum -a 256 | cut -d " " -f 1
+```
+
 3. Commit the changes and push to your fork. Within the same branch (PR), **DO NOT** change anything else.
 4. Create a pull request to the main repository. **DO NOT** put the `pr-pull` label on it yet.
 5. Make sure that the tests `.github/workflows/tests.yml` pass and that the bottles are uploaded correctly for each platform.
-   - You can check the `artifacts` by downloading them from the GitHub Actions summary of your PR (scroll down).
+   - You can check the `artifacts` manually by downloading them from the GitHub Actions summary of your PR (scroll down).
 6. After all tests have passed and the `artifacts` are available, request a review from the repository maintainers.
-7. After approval, label the PR with the `pr-pull` label to trigger the merge action.
+7. After approval, label the PR with the `pr-pull` label to trigger the merge action (`.github/workflows/publish.yml`).
 8. The PR should look roughly as follows:
 
     <img src="assets/sample-pr.png" width="400" alt="Exemplary pull request." />
 
-You can find out how the process should look like [here](https://brew.sh/2020/11/18/homebrew-tap-with-bottles-uploaded-to-github-releases/).
+There is a blog entry on how the process should look like [here](https://brew.sh/2020/11/18/homebrew-tap-with-bottles-uploaded-to-github-releases/).
 
 ## License
 
