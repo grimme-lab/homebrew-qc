@@ -1,8 +1,8 @@
 class Dftd4 < Formula
   desc "Generally applicable, charge dependent London-dispersion correction"
   homepage "https://github.com/dftd4/dftd4"
-  url "https://github.com/dftd4/dftd4/releases/download/v3.5.0/dftd4-3.5.0-source.tar.xz"
-  sha256 "d2bab992b5ef999fd13fec8eb1da9e9e8d94b8727a2e624d176086197a00a46f"
+  url "https://github.com/dftd4/dftd4/archive/refs/tags/v3.7.0.tar.gz"
+  sha256 "f00b244759eff2c4f54b80a40673440ce951b6ddfa5eee1f46124297e056f69c"
   license "LGPL-3.0-or-later"
 
   bottle do
