@@ -16,12 +16,12 @@ class Tblite < Formula
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
-  depends_on "gcc"
-  depends_on "openblas"
-  depends_on "mctc-lib"
   depends_on "dftd4"
+  depends_on "gcc"
+  depends_on "mctc-lib"
   depends_on "mstore"
   depends_on "multicharge"
+  depends_on "openblas"
   depends_on "s-dftd3"
   depends_on "toml-f"
   fails_with gcc: "4"
