@@ -6,10 +6,10 @@ class Gcp < Formula
   license "LGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/gcp-2.3.1_1"
-    sha256 cellar: :any,                 monterey:     "3fe4c8596c27a8bdc885a393f35c327936d6c4d826dede8ba58de19e74c617f3"
-    sha256 cellar: :any,                 big_sur:      "04bb8a91ee9a45f812ab1f9cc55f274099ced52e5dad0621f497b1737c2acb73"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3f95bdc18bbfca051d337023a549ec3c1e1da3bf7a63bd8a6e041afcaf7d715b"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/gcp-2.3.2"
+    sha256 cellar: :any,                 arm64_sequoia: "50e5f9313afa454f8a6dd412c69c6b99af52003a86431fa9b8e297670573a18d"
+    sha256 cellar: :any,                 arm64_sonoma:  "b40b2372baf44080a86309a542de89500d8e4fe33adc738ba84ea819665e3df5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3ba888ab45050d3d007c61279a251329ade25c9caa1b6a702a4e02484e9a82bb"
   end
 
   depends_on "asciidoctor" => :build
