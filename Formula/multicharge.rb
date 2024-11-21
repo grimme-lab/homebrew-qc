@@ -6,10 +6,10 @@ class Multicharge < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/multicharge-0.2.0_1"
-    sha256 cellar: :any, monterey:     "f7f107024178eef05bf839735e4a77004ef9a4de549241ba5ecc1c0470047006"
-    sha256 cellar: :any, big_sur:      "ff8fb2db6a37c8561dbdac6c5289eab39f92885f1b803771b61aec5dd98c48ed"
-    sha256               x86_64_linux: "56257fef8886115759749bff74792e1c528d728f6183e3acd45ee2d8ec3e8d45"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/multicharge-0.3.0"
+    sha256 cellar: :any, arm64_sequoia: "734fe9a324427b17d51f6097ee5b29452a0b465c10a78ba069b7cb32e2c281f5"
+    sha256 cellar: :any, arm64_sonoma:  "260cb8b1cd76c47f34d534d9d8f873b35d84e81f7d38bb30b541c103104210f7"
+    sha256               x86_64_linux:  "8c1c8790e1b8cc703bcd2afdace20b1869e6dc009d0a797dcaa090c9f1078782"
   end
 
   depends_on "asciidoctor" => :build
