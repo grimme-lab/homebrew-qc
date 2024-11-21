@@ -6,10 +6,10 @@ class Dftd4 < Formula
   license "LGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/dftd4-3.5.0"
-    sha256 cellar: :any, monterey:     "abf8959d58e34cff739575dc7de872dd0aae6c7633fb44932926be87f0b07ccd"
-    sha256 cellar: :any, big_sur:      "6055a827bc3f53d5e1bef61b6de276056084fc463341f70f9648c6599e447767"
-    sha256               x86_64_linux: "7287a9a236c3c08bcb285c47a6853479141c17aabe69b35d5877baf6c388b342"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/dftd4-3.7.0"
+    sha256 cellar: :any, arm64_sequoia: "0c7f4e737a87a3158ecefcbe9cd4002d9f50903c3617fed3415e67e3ad45b5f2"
+    sha256 cellar: :any, arm64_sonoma:  "0522dda0078770e0f337cf683655af88d03b73a8da3bf9d677191c96a452c5cf"
+    sha256               x86_64_linux:  "635c04978955b6308bf7757d4da46d324baa7b7ed8cfa2711265928fcebd23ca"
   end
 
   depends_on "asciidoctor" => :build
