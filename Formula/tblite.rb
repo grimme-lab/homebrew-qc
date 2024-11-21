@@ -6,10 +6,10 @@ class Tblite < Formula
   license "LGPL-3.0-or-later"
 
   bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/tblite-0.3.0"
-    sha256 cellar: :any, monterey:     "765a780985e332058a0288a6f22623ba06d07115bce7dc8af29037bcb5e92e1a"
-    sha256 cellar: :any, big_sur:      "df658b218a4dbb132f190447638e3fc15f7d9c001eb576e80c13ea46e628274e"
-    sha256               x86_64_linux: "d07351e809391edca09133abb2d34ff3cf866b3b00d34ed5dc353dc04dc1bdb3"
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/tblite-0.4.0"
+    sha256 cellar: :any, arm64_sequoia: "939d9365457d04e24aa7d430a46a19e15ab3b7d8e22c716912d2850e4ff838fa"
+    sha256 cellar: :any, arm64_sonoma:  "e0d0799e99971d7c1ab9eebee5b25427b9c10bec16712e394605b8df5b7cf54b"
+    sha256               x86_64_linux:  "ae72d3575f5d5798a6e9e9196abf47cf55203e9f715fc0b3c33407d4ba4b2c63"
   end
 
   depends_on "asciidoctor" => :build
