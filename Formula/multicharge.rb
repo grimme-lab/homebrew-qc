@@ -1,10 +1,9 @@
 class Multicharge < Formula
   desc "Generally applicable, charge dependent London-dispersion correction"
   homepage "https://github.com/grimme-lab/multicharge"
-  url "https://github.com/grimme-lab/multicharge/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "953e2ace2f4035b1fa8ecf680f90b5ce6ad5caae17c8d8ccbc2578b92b69d3e7"
+  url "https://github.com/grimme-lab/multicharge/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "2fcc1f80871f404f005e9db458ffaec95bb28a19516a0245278cd3175b63a6b2"
   license "Apache-2.0"
-  revision 1
 
   bottle do
     root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/multicharge-0.2.0_1"
@@ -29,7 +28,6 @@ class Multicharge < Formula
 
   def install
     ENV.fortran
-    inreplace "config/install-mod.py", /python$/, "python3"
     meson_args = std_meson_args
     meson_args << "-Dlapack=openblas"
     system "meson", "setup", "_build", *meson_args
