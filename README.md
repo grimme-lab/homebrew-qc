@@ -25,6 +25,8 @@ Available programs are
 - **Associated Software:**
   - [crest](https://github.com/crest-lab/crest):
     Conformer-rotamer ensemble search tool
+  - [tblite](https://github.com/tblite/tblite):
+    Light-weight tight-binding framework
 - **Fortran Language Community:**
   - [mstore](https://github.com/grimme-lab/mstore):
     Molecular structure storage for testing purposes
