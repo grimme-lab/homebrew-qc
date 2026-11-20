@@ -37,6 +37,7 @@ class Tblite < Formula
 
   def install
     (buildpath/"subprojects/ddx").install resource("ddx")
+    inreplace buildpath.glob("src/tblite/api/*.f90"), "   private\n", ""
     ENV.fortran
     meson_args = std_meson_args
     meson_args << "--wrap-mode=nodownload"

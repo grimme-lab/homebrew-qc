@@ -28,6 +28,7 @@ class SDftd3 < Formula
   fails_with :clang
 
   def install
+    inreplace "src/dftd3/api.f90", "   private\n", ""
     ENV.fortran
     meson_args = std_meson_args
     meson_args << "-Dblas=custom"
