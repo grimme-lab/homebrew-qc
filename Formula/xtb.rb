@@ -5,6 +5,14 @@ class Xtb < Formula
   sha256 "73e3dc7d88b58309f35e7f3eab069cc3999a4211acd2ed98d768ffbd41c5acdf"
   license "LGPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/xtb-6.8.0"
+    rebuild 1
+    sha256 cellar: :any, arm64_tahoe:   "77ba4ec8250a06498cf5ac3ac5f56eb4b6eccc515652fd93723f656018d710b2"
+    sha256 cellar: :any, arm64_sequoia: "d35a7542e5b4d0a915a7b017f507c742c82911c72a08f022afc747f64788e756"
+    sha256 cellar: :any, x86_64_linux:  "abf6945ed49cdaa7cdf784b8046600947eb8134ca03e6e2f37ff1d68222bd43f"
+  end
+
   depends_on "asciidoctor" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
