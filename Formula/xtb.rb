@@ -33,6 +33,7 @@ class Xtb < Formula
     ENV.fortran
     meson_args = std_meson_args
     meson_args << "-Dlapack=openblas"
+    meson_args << "-Dtblite=enabled"
     # meson_args << "-Dbuild_name=homebrew"
     # meson_args << "-Dxtb:fortran_link_args=-Wl,-stack_size,0x1000000" if OS.mac?
     system "meson", "setup", "_build", *meson_args
@@ -43,5 +44,29 @@ class Xtb < Formula
 
   test do
     system "#{bin}/xtb", "--version"
+
+    (testpath/"water.xyz").write <<~EOS
+      3
+
+      O  0.000000  0.000000  0.119262
+      H  0.000000  0.763239 -0.477047
+      H  0.000000 -0.763239 -0.477047
+    EOS
+
+    energy_pattern = /\|\s*TOTAL ENERGY\s+([-+]?\d+\.\d+)\s+Eh\s*\|/
+
+    native_output = shell_output("#{bin}/xtb #{testpath}/water.xyz --gfn 2 --norestart")
+    native_match = native_output.match(energy_pattern)
+    assert native_match, "Failed to extract total energy from native xtb output"
+    native_energy = Float(native_match[1])
+    assert_predicate native_energy, :finite?
+
+    tblite_output = shell_output("#{bin}/xtb #{testpath}/water.xyz --gfn 2 --tblite --norestart")
+    tblite_match = tblite_output.match(energy_pattern)
+    assert tblite_match, "Failed to extract total energy from xtb --tblite output"
+    tblite_energy = Float(tblite_match[1])
+    assert_predicate tblite_energy, :finite?
+
+    assert_in_delta native_energy, tblite_energy, 1e-7
   end
 end
