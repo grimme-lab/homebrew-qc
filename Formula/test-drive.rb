@@ -5,13 +5,6 @@ class TestDrive < Formula
   sha256 "33c486fac95fabf8050757b92f552d816aabb46dc820a8d25dde6676eb5eb626"
   license any_of: ["Apache-2.0", "MIT"]
 
-  bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/test-drive-0.5.0"
-    sha256 cellar: :any,                 arm64_sequoia: "fe877225d7f3fd6bb714975562b94f39b37ba4f12e616c6a6647cc61cad4dec4"
-    sha256 cellar: :any,                 arm64_sonoma:  "2e5aa83778b0c5b5b3a985ff872b6545a0e9d6e2b38d675ddbf334df7fc82bb4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7205de1f685065271e8beb8772b660c25b71241ffa4b1e52f24b963f2a54a25c"
-  end
-
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :test

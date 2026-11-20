@@ -5,13 +5,6 @@ class SDftd3 < Formula
   sha256 "4d733eb6dbe8266fcfad67cef31de932a079f7c911f24f4b6efc594cd3d28803"
   license "LGPL-3.0-or-later"
 
-  bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/s-dftd3-1.2.1"
-    sha256 cellar: :any,                 arm64_sequoia: "7a32659620cf82a994943e6932743b4a6ac5f49750cb68da2cc7b09bb7f1fa22"
-    sha256 cellar: :any,                 arm64_sonoma:  "ec3586ae0baa2d85045c73d59a2ee87841dbee56b9af74b0174b3fe996a5c7b0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b75c16e73ca9de3512ff66c8140d2265791375f7fea5586e26d338d619745540"
-  end
-
   depends_on "asciidoctor" => :build
   depends_on "meson" => :build
   depends_on "mstore" => :build
