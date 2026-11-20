@@ -5,6 +5,14 @@ class Dftd4 < Formula
   sha256 "01651dd3df06f0875ed4e710ee82f7dcb621edb262d6d22068dea818b915f5da"
   license "LGPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/dftd4-4.3.1"
+    rebuild 1
+    sha256 cellar: :any, arm64_tahoe:   "1a4c6591b7ec874567425f4a63414dd9c8f1982622ccf63af52b0f29b297be11"
+    sha256 cellar: :any, arm64_sequoia: "5d23434412574881a7cb04e61ec376ea62a12bd946001784aa4bc69fc69fd53e"
+    sha256 cellar: :any, x86_64_linux:  "7227c5449a119727b202d87acff16f62eb57c4f34a69027551e8ed9226f50c8e"
+  end
+
   depends_on "asciidoctor" => :build
   depends_on "meson" => :build
   depends_on "mstore" => :build
