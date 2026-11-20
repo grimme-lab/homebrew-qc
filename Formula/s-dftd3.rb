@@ -1,8 +1,8 @@
 class SDftd3 < Formula
   desc "Simple reimplementation of DFT-D3"
   homepage "https://dftd3.readthedocs.io"
-  url "https://github.com/dftd3/simple-dftd3/archive/refs/tags/v1.2.1.tar.gz"
-  sha256 "3a12c04c490badc63054aca18ea7670d416fcc2152cfe9b8af220da57c39f942"
+  url "https://github.com/dftd3/simple-dftd3/archive/refs/tags/v1.7.0.tar.gz"
+  sha256 "4d733eb6dbe8266fcfad67cef31de932a079f7c911f24f4b6efc594cd3d28803"
   license "LGPL-3.0-or-later"
 
   bottle do
@@ -28,6 +28,10 @@ class SDftd3 < Formula
   fails_with :clang
 
   def install
+    # GCC 16 strips bind(C) module procedures omitted from public in private modules
+    inreplace "src/dftd3/api.f90",
+              "public :: set_model_realspace_cutoff,",
+              "public :: set_model_ghost_index, set_model_realspace_cutoff,"
     ENV.fortran
     meson_args = std_meson_args
     meson_args << "-Dblas=custom"
