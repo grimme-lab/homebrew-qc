@@ -39,25 +39,24 @@ class Tblite < Formula
     (buildpath/"subprojects/ddx").install resource("ddx")
     # GCC 16 strips bind(C) module procedures omitted from public in private modules
     inreplace "src/tblite/api/calculator.f90",
-              "   public :: get_singlepoint_api",
-              "   public :: get_singlepoint_api, set_calculator_guess_api\n" \
-              "   public :: get_calculator_shell_count, get_calculator_shell_map\n" \
-              "   public :: get_calculator_angular_momenta, get_calculator_orbital_count\n" \
-              "   public :: get_calculator_orbital_map"
+              "public :: get_singlepoint_api",
+              "public :: get_singlepoint_api, set_calculator_guess_api, get_calculator_shell_count\n" \
+              "public :: get_calculator_shell_map, get_calculator_angular_momenta\n" \
+              "public :: get_calculator_orbital_count, get_calculator_orbital_map"
     inreplace "src/tblite/api/container.f90",
-              "   public :: vp_container, delete_container_api",
-              "   public :: vp_container, delete_container_api, push_back_api\n" \
-              "   public :: new_electric_field_api, new_spin_polarization_api"
+              "public :: vp_container, delete_container_api",
+              "public :: vp_container, delete_container_api, push_back_api\n" \
+              "public :: new_electric_field_api, new_spin_polarization_api"
     inreplace "src/tblite/api/double_dictionary.f90",
-              "   public :: vp_double_dictionary",
-              "   public :: vp_double_dictionary, delete_post_processing_api"
+              "public :: vp_double_dictionary",
+              "public :: vp_double_dictionary, delete_post_processing_api"
     inreplace "src/tblite/api/error.f90",
-              "   public :: vp_error",
-              "   public :: vp_error, set_error_api"
+              "public :: vp_error",
+              "public :: vp_error, set_error_api"
     inreplace "src/tblite/api/result.f90",
-              "   public :: vp_result,",
-              "   public :: save_result_wavefunction_api, load_result_wavefunction_api\n" \
-              "   public :: vp_result,"
+              "public :: vp_result,",
+              "public :: save_result_wavefunction_api, load_result_wavefunction_api\n" \
+              "public :: vp_result,"
     ENV.fortran
     meson_args = std_meson_args
     meson_args << "--wrap-mode=nodownload"

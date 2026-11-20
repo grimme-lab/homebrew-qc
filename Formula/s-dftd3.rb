@@ -30,8 +30,8 @@ class SDftd3 < Formula
   def install
     # GCC 16 strips bind(C) module procedures omitted from public in private modules
     inreplace "src/dftd3/api.f90",
-              "   public :: set_model_realspace_cutoff,",
-              "   public :: set_model_ghost_index, set_model_realspace_cutoff,"
+              "public :: set_model_realspace_cutoff,",
+              "public :: set_model_ghost_index, set_model_realspace_cutoff,"
     ENV.fortran
     meson_args = std_meson_args
     meson_args << "-Dblas=custom"
