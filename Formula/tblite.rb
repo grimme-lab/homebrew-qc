@@ -1,8 +1,8 @@
 class Tblite < Formula
   desc "Light-weight tight-binding framework"
   homepage "https://github.com/tblite/tblite"
-  url "https://github.com/tblite/tblite/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "c4a67dfbe04827095fd7598183e076fa3017a5a475c4f90fd28e78992dc19ea7"
+  url "https://github.com/tblite/tblite/archive/refs/tags/v0.8.0.tar.gz"
+  sha256 "987e7ac801e25d87590550f8f1bbcf8f9b560e1673d0bc40586c854084c97fa7"
   license "LGPL-3.0-or-later"
 
   bottle do
@@ -30,10 +30,18 @@ class Tblite < Formula
   fails_with gcc: "7"
   fails_with :clang
 
+  resource "ddx" do
+    url "https://github.com/ddsolvation/ddX/archive/refs/tags/v1.0.2.tar.gz"
+    sha256 "84e6197167f77990f9fb6eff5e7313283ecb2376aa7707b5e4bec4df33a18f0f"
+  end
+
   def install
+    (buildpath/"subprojects/ddx").install resource("ddx")
     ENV.fortran
     meson_args = std_meson_args
+    meson_args << "--wrap-mode=nodownload"
     meson_args << "-Dlapack=openblas"
+    meson_args << "-Dddx:tests=false"
     system "meson", "setup", "_build", *meson_args
     system "meson", "compile", "-C", "_build"
     system "meson", "test", "-C", "_build", "--no-rebuild", "--num-processes", "1"

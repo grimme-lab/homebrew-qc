@@ -1,8 +1,8 @@
 class Xtb < Formula
   desc "Semiemprical extended tight-binding program package"
   homepage "https://xtb-docs.readthedocs.io"
-  url "https://github.com/grimme-lab/xtb/archive/refs/tags/v6.7.1.tar.gz"
-  sha256 "52506a689147cdb4695bf1c666158b6d6d6b31726fecaa5bf53af7f4e3f3d20d"
+  url "https://github.com/grimme-lab/xtb/archive/refs/tags/v6.8.0.tar.gz"
+  sha256 "73e3dc7d88b58309f35e7f3eab069cc3999a4211acd2ed98d768ffbd41c5acdf"
   license "LGPL-3.0-or-later"
 
   bottle do
@@ -22,6 +22,7 @@ class Xtb < Formula
   depends_on "mctc-lib"
   depends_on "multicharge"
   depends_on "openblas"
+  depends_on "tblite"
   fails_with gcc: "4"
   fails_with gcc: "5"
   fails_with gcc: "6"
@@ -32,7 +33,6 @@ class Xtb < Formula
     ENV.fortran
     meson_args = std_meson_args
     meson_args << "-Dlapack=openblas"
-    meson_args << "-Dtblite=disabled"
     # meson_args << "-Dbuild_name=homebrew"
     # meson_args << "-Dxtb:fortran_link_args=-Wl,-stack_size,0x1000000" if OS.mac?
     system "meson", "setup", "_build", *meson_args

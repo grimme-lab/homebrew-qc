@@ -1,8 +1,8 @@
 class TestDrive < Formula
   desc "Simple testing framework"
   homepage "https://github.com/fortran-lang/test-drive"
-  url "https://github.com/fortran-lang/test-drive/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "e7d99209de0d1c4faebf3be64303a3adf2940c07cf86d47858c4032c5d38dfc2"
+  url "https://github.com/fortran-lang/test-drive/archive/refs/tags/v0.6.1.tar.gz"
+  sha256 "33c486fac95fabf8050757b92f552d816aabb46dc820a8d25dde6676eb5eb626"
   license any_of: ["Apache-2.0", "MIT"]
 
   bottle do

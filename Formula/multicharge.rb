@@ -1,8 +1,8 @@
 class Multicharge < Formula
   desc "Generally applicable, charge dependent London-dispersion correction"
   homepage "https://github.com/grimme-lab/multicharge"
-  url "https://github.com/grimme-lab/multicharge/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "2fcc1f80871f404f005e9db458ffaec95bb28a19516a0245278cd3175b63a6b2"
+  url "https://github.com/grimme-lab/multicharge/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "129ab0325663e9155b5d91c4364199cec5fc0cbecdfe047cc24a37aa2f7a50e0"
   license "Apache-2.0"
 
   bottle do
