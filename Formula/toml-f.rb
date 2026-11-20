@@ -5,13 +5,6 @@ class TomlF < Formula
   sha256 "095814952e76283a689ea957aa5bd7fc748cbe24d4ffb3a34f4f564b792dd33c"
   license any_of: ["Apache-2.0", "MIT"]
 
-  bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/toml-f-0.4.2"
-    sha256 cellar: :any,                 arm64_sequoia: "ff3739e7d86f3baafd8031cfcb09f6f2cf2e1e907323e761a5d3c8b13612ccaf"
-    sha256 cellar: :any,                 arm64_sonoma:  "c7606206ef78667fa1833ccb002f4f8212fa8a1d8649e727b02110a0d7f7369c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "747760e5e1f94ebab2e8c1ba8e17c6a8fbfff908a1ca6c4dd6117e9fcfa476bd"
-  end
-
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => [:build, :test]

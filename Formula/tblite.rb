@@ -5,13 +5,6 @@ class Tblite < Formula
   sha256 "987e7ac801e25d87590550f8f1bbcf8f9b560e1673d0bc40586c854084c97fa7"
   license "LGPL-3.0-or-later"
 
-  bottle do
-    root_url "https://github.com/grimme-lab/homebrew-qc/releases/download/tblite-0.4.0"
-    sha256 cellar: :any, arm64_sequoia: "939d9365457d04e24aa7d430a46a19e15ab3b7d8e22c716912d2850e4ff838fa"
-    sha256 cellar: :any, arm64_sonoma:  "e0d0799e99971d7c1ab9eebee5b25427b9c10bec16712e394605b8df5b7cf54b"
-    sha256               x86_64_linux:  "ae72d3575f5d5798a6e9e9196abf47cf55203e9f715fc0b3c33407d4ba4b2c63"
-  end
-
   depends_on "asciidoctor" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
